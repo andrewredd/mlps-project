@@ -5,6 +5,8 @@ library(purrr)
 library(text2vec)
 library(Matrix)
 
+setwd("C:/Users/andre/OneDrive/School/CMU/Spring 2018/Machine Learning for Problem Solving/Project/mlps-project")
+
 # load data
 data = read_tsv("Data/train.tsv")
 
@@ -47,7 +49,10 @@ vectorizer = vocab_vectorizer(vocab)
 
 dtm_final = create_dtm(it_train, vectorizer)
 
-writeMM(dtm_final, file = "Data/train_term_matrix.dtx")
+colnames_dtm_final = rownames(t(dtm_final))
+
+write(colnames_dtm_final, file = "Data/colnames_train_term_matrix.txt")
+writeMM(dtm_final, file = "Data/train_term_matrix.mtx")
 
 
 
