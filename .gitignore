@@ -2,3 +2,6 @@
 *.csv
 *.ini
 .Rproj.user
+*.mtx
+*.txt
+*.ipynb_checkpoints
