@@ -5,3 +5,4 @@
 *.mtx
 *.txt
 *.ipynb_checkpoints
+*.Rhistory
