@@ -8,4 +8,5 @@
 *.Rhistory
 *.dtx
 *.npz
+*.json
 *.DS_Store
