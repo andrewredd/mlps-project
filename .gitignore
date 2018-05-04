@@ -10,3 +10,4 @@
 *.npz
 *.json
 *.DS_Store
+*.pkl
